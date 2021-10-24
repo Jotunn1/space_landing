@@ -44,6 +44,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
 .title {
   font-family: "spaceagecyrillic-regular";
   font-size: 48px;
@@ -517,4 +518,353 @@ foreignObject {
 .footer__menu-link:hover,
 .footer__links-link:hover {
   color: #cb0e0e;
+}
+.menu__btn {
+  display: none;
+  width: 40px;
+  padding: 0;
+  position: relative;
+  z-index: 20;
+}
+.menu__btn span {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+.menu__btn span::before,
+.menu__btn span::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.menu__btn span::before {
+  top: -10px;
+}
+.menu__btn span::after {
+  top: 10px;
+}
+.how-to__box-list {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .about {
+    display: block;
+  }
+  .about__item {
+    text-align: center;
+  }
+  .about__content {
+    width: 100%;
+  }
+  .about__content-text {
+    display: block;
+  }
+  .about__content-text p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .about__img {
+    margin-bottom: 50px;
+  }
+  .about__table {
+    width: 100%;
+  }
+  .slider__arrow {
+    top: 105%;
+  }
+}
+@media (max-width: 1050px) {
+  .offer__inner {
+    display: block;
+  }
+  .offer__item {
+    width: 100%;
+  }
+  .offer__btn {
+    margin-bottom: 20px;
+  }
+  .contacts__inner {
+    display: block;
+  }
+  .contacts__box {
+    width: 100%;
+  }
+  .guarantees {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .login {
+    margin-right: 0;
+  }
+  .to-book {
+    background-position: center left;
+  }
+  .to-book__inner {
+    display: block;
+  }
+  .to-book__text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 895px) {
+  .header__top {
+    padding-top: 30px;
+  }
+  .login {
+    margin-right: 0;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .menu__list {
+    transform: translateY(-150%);
+    display: block;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #010203;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .menu__list.active {
+    transform: translateY(0);
+  }
+  .menu__item {
+    padding: 15px 0;
+  }
+  .menu__link {
+    display: block;
+  }
+  .phone {
+    position: relative;
+    z-index: 20;
+  }
+  .login {
+    position: relative;
+    z-index: 20;
+  }
+  .header__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header__descr {
+    justify-content: center;
+  }
+  .header {
+    background-position: center right;
+  }
+  .services__inner {
+    display: block;
+  }
+  .services__box-list {
+    margin-right: 25px;
+    margin-bottom: 170px;
+    width: 100%;
+  }
+  .services__btns {
+    max-width: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .slick-slide img {
+    max-width: 100%;
+  }
+  .slider__descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .info {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 720px) {
+  .serrivces {
+    padding-bottom: 50px;
+  }
+  .slider__inner {
+    padding: 0;
+  }
+  .contacts__text,
+  .guarantees__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .header__content {
+    text-align: center;
+  }
+  .header__title {
+    line-height: 30px;
+    font-size: 34px;
+  }
+  .header__title span {
+    font-size: 60px;
+  }
+  .header__text {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .header__text p + .header__text p {
+    padding-top: 10px;
+  }
+  .header__btn {
+    width: 60%;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .header__descr {
+    display: block;
+  }
+  .header__descr-text {
+    text-align: center;
+    width: 100%;
+  }
+  .header__descr-text + .header__descr-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .title {
+    padding: 50px 0;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .about__item {
+    padding-bottom: 50px;
+  }
+  .about__table-tr:first-child {
+    display: none;
+  }
+  .about__table-tr + .about__table-tr {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  .about__table-td {
+    display: block;
+    text-align: right;
+    border: 1px solid #fff;
+  }
+  .about__table-td:last-child {
+    border-bottom: none;
+  }
+  .about__table-td::before {
+    content: attr(aria-label);
+    float: left;
+  }
+  .about__table-td span {
+    display: inline-block;
+  }
+  .how-to__box svg {
+    display: none;
+  }
+  .how-to__box-list {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    list-style: none;
+  }
+  .how-to__box-list-item {
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+  }
+  .how-to__box-list-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .guarantees {
+    width: 100%;
+  }
+  .guarantees__img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .footer {
+    background-position: center left;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .footer__inner {
+    display: block;
+  }
+  .footer__text {
+    margin-right: 0;
+    width: 100%;
+  }
+  .footer__text p + p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .footer__menu {
+    margin-bottom: 60px;
+  }
+  .footer__menu,
+  .footer__links {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .offer__item-new-price {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .services__box-list {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .offer__item-box {
+    padding: 40px 10px;
+  }
+}
+@media (max-width: 375px) {
+  .services__btn-first:before {
+    bottom: 63px;
+  }
+}
+@media (max-width: 360px) {
+  .phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .header__title {
+    font-size: 28px;
+  }
+  .header__title span {
+    font-size: 32px;
+  }
+  .header__btn {
+    font-size: 16px;
+    width: 100%;
+  }
 }
